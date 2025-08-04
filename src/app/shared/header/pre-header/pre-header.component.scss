@@ -1,0 +1,70 @@
+@import '../../../../styles.scss';
+
+.pre-header {
+  background-color: #F9FAFB;
+  padding-right: 9rem;
+  max-height: 2.25rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-family: 'Kohinoor Bangla', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  
+  svg {
+    margin-left: 5px;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  color: #475467;
+  font-family: 'Kohinoor Bangla', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #EAECF0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  color: #475467;
+  font-family: 'Kohinoor Bangla', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  
+  span {
+    margin-right: 5px;
+  }
+  
+  svg {
+    margin-left: 5px;
+  }
+  
+  &:hover, &:focus {
+    outline: none;
+    color: #E62E05;
+  }
+}

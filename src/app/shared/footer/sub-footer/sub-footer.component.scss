@@ -1,0 +1,54 @@
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEF3F2;
+  padding: 1rem 9rem;
+  border: 1px solid #FEF3F2;
+  flex-wrap: wrap;
+}
+
+.newsletter-text {
+  max-width: 60%;
+}
+
+.newsletter-text h3 {
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #475467;
+  font-family: 'Kohinoor Bangla', sans-serif;
+}
+
+.newsletter-text p {
+  margin: 0;
+  color: #475467;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'QuickSand', sans-serif;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 8px 12px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.newsletter-form button {
+  padding: 8px 16px;
+  background: linear-gradient(to right, #F3B33E, #EB693C);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Kohinoor Bangla', sans-serif;
+}
+

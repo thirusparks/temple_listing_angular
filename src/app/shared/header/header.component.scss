@@ -1,0 +1,90 @@
+.sub-section {
+  display: flex;
+  background: linear-gradient(to right, #F3B33E, #EB693C);
+  color: #fff;
+  border-top-left-radius: 4rem;
+  padding: 1rem;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  padding-left: 9rem;
+  padding-right: 0rem;
+
+  .logo img {
+    height: 32px;
+  }
+
+  .search-container {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 15px;
+
+    input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 20px 0 0 20px;
+      font-size: 0.9rem;
+      border-right: 0px !important;
+    }
+
+    .mic-btn {
+      padding: 0 12px;
+      border: 1px solid #ddd;
+      border-left: 0px;
+      border-radius: 0 20px 20px 0;
+      background: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .donate-btn {
+    background: linear-gradient(to right, #F3B33E, #EB693C);
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .location-select,
+  .currency-select {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    .flag {
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    .avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    span {
+      font-size: 0.9rem;
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="temple-grid">
+  <div class="temple-card" *ngFor="let temple of temples">
+    <div class="temple-image-wrapper">
+      <img [src]="temple.image" [alt]="temple.name" />
+      <div class="temple-location">
+        <i class="fa fa-map-marker"></i> {{ temple.location }}
+      </div>
+    </div>
+    <div class="temple-content">
+      <h3>{{ temple.name }}</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat lorem ac erat maximus vulputate.</p>
+    </div>
+  </div>
+</div>

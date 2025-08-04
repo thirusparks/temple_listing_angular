@@ -1,0 +1,152 @@
+// Footer container styling
+.main-footer {
+  background: linear-gradient(
+    135deg,
+    #F3B33E 0%,
+    #EB693C 100%
+  );
+}
+
+footer {
+  background: transparent;
+  color: white;
+  font-family: 'Kohinoor Bangla', sans-serif;
+  text-align: left;
+  padding-top: 4rem;
+}
+
+.footer-padding{
+  padding-right: 9rem;
+  padding-left: 8.5rem;
+}
+
+// Section header styling
+h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: white;
+  text-align: left;
+}
+
+// Navigation links styling
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  transition: color 0.2s ease-in-out;
+  text-align: left;
+  
+  &:hover {
+    color: #333333;
+  }
+  
+  &.d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  svg {
+    vertical-align: middle;
+    margin-right: 10px; // Add 10px margin to the right of all SVG icons
+  }
+}
+
+.app-store-button {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  height: 2.5rem;
+  width: 8.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+
+    .small {
+      font-size: 0.75rem;
+    }
+
+    .large {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    background-color: darken(#eb6834, 5%);
+  }
+}
+
+
+// Ensure flex column items are left-aligned
+.nav.flex-column {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.nav-item {
+  text-align: left;
+  width: 100%;
+}
+
+// Copyright text
+p {
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+// Social media icons
+.link-body-emphasis {
+  color: white;
+  
+  &:hover {
+    color: #333333;
+  }
+  
+  svg {
+    fill: currentColor;
+  }
+}
+
+// Footer bottom section
+.border-top {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+// Text with secondary class
+.text-body-secondary {
+  color: white !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .col-md-5 {
+    margin-top: 24px;
+  }
+}
+
+
+
+
+
