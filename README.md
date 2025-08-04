@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
+## Required Node version
+v18.19 and above
+Hint: use nvm to update your node version
+
 ## Development server
 Install node modules using the command $npm install
 
