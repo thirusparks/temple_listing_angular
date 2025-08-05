@@ -12,4 +12,14 @@ import { TempleGridComponent } from '../temple-listing-page/temple-grid/temple-g
 })
 export class TempleListingPageComponent {
 
+  selectedCity: string | null = null;
+
+  onCitySelected(city: string) {
+    this.selectedCity = city;
+  }
+
+  onCityCleared() {
+    this.selectedCity = null;
+  }
+
 }

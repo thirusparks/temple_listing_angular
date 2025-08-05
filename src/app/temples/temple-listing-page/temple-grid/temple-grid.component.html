@@ -1,5 +1,5 @@
 <div class="temple-grid">
-  <div class="temple-card" *ngFor="let temple of temples">
+  <div class="temple-card" *ngFor="let temple of filteredTemples">
     <div class="temple-image-wrapper">
       <img [src]="temple.image" [alt]="temple.name" />
       <div class="temple-location">
