@@ -20,7 +20,7 @@
         <ul class="filter-list">
             <li *ngFor="let location of visibleLocations">
                 <label (click)="selectLocation(location); $event.preventDefault()">
-                    <input type="checkbox" [value]="location" [checked]="selectedLocation === location" (click)="$event.stopPropagation()" />
+                    <input type="checkbox" [value]="location" [checked]="selectedLocation === location" />
                     {{ location }}
                 </label>
             </li>
