@@ -1,9 +1,10 @@
 <div class="temple-grid">
-  <div class="temple-card" *ngFor="let temple of filteredTemples">
+  <div class="temple-card" *ngFor="let temple of filteredTemples" (click)="openTempleDialog(temple)">
     <div class="temple-image-wrapper">
       <img [src]="temple.image" [alt]="temple.name" />
       <div class="temple-location">
-        <i class="fa fa-map-marker"></i> {{ temple.location }}
+        <img class="d-flex" src="assets/icons/location.svg" alt="Location" class="location-icon" />
+        <span class="location-name">{{ temple.location }}</span>
       </div>
     </div>
     <div class="temple-content">
@@ -11,4 +12,21 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat lorem ac erat maximus vulputate.</p>
     </div>
   </div>
+</div>
+
+<div class="pagination-container">
+  <button class="pagination-button" [disabled]="currentPage === 1" (click)="goToPreviousPage()">
+    &larr; Previous
+  </button>
+
+  <ul class="pagination-list">
+    <li *ngFor="let page of totalPagesArray" [class.active]="currentPage === page" class="pagination-item"
+      (click)="goToPage(page)">
+      {{ page }}
+    </li>
+  </ul>
+
+  <button class="pagination-button" [disabled]="currentPage === totalPages" (click)="goToNextPage()">
+    Next &rarr;
+  </button>
 </div>

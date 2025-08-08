@@ -11,9 +11,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       h3 {
-        font-size: 1rem;
-        color: #f15a24; // orange color
+        font-size: 18px;
+        font-family: 'Kohinoor Bangla', sans-serif;
+        font-weight: 600;
+        color: #FF692E; // orange color
         margin: 0;
       }
       .icon-search {
@@ -34,8 +37,11 @@
         label {
           display: flex;
           align-items: center;
-          font-size: 0.9rem;
+          font-size: 14px;
+          line-height: 20px;
           cursor: pointer;
+          font-family: 'Kohinoor Bangla', sans-serif;
+          font-weight: 500;
 
           input[type="checkbox"] {
             margin-right: 0.4rem;
@@ -60,7 +66,7 @@
 
   hr {
     border: none;
-    border-top: 1px solid #eee;
+    border: 1px solid #D0D5DD;
     margin: 1rem 0;
   }
 

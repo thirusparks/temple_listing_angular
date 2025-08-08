@@ -52,14 +52,25 @@
 }
 
 .carousel .location {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 8px;
     left: 12px;
-    background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 0.9rem;
+}
+
+.carousel .location-name {
+    display: flex;
+    margin-left: 4px;
+    font-family: 'Kohinoor Bangla', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
 }
 
 .temple-details {
@@ -70,6 +81,13 @@
     height: 300px;
 }
 
+.desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+}
 
 .temple-details .badge {
     display: inline-block;
@@ -90,11 +108,6 @@
     line-height: 24px;
     margin: 0.5rem 0;
     color: #101828;
-}
-
-.temple-details p {
-    font-size: 0.9rem;
-    color: #444;
 }
 
 .temple-details .actions {

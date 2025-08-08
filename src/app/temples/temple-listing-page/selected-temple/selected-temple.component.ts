@@ -13,7 +13,7 @@ export class SelectedTempleComponent {
   images = [
     { src: '../../../assets/images/MaduraiTemple.png', alt: 'Madurai', temple: 'Meenakshi Temple' },
     { src: '../../../assets/images/DelhiTemple.png', alt: 'Delhi', temple: 'Akshardham Temple' },
-    { src: '../../../assets/images/GujaratTemple.png', alt: 'Gujarat', temple: 'Somnath Temple' }
+    { src: '../../../assets/images/GujaratTemple.jpg', alt: 'Gujarat', temple: 'Somnath Temple' }
   ];
 
   currentIndex = 0;

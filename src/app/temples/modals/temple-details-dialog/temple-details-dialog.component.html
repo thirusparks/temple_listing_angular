@@ -1,0 +1,26 @@
+<div class="p-3">
+    <h2 class="mat-dialog-title">{{ data.name }}</h2>
+    <mat-dialog-content>
+        <div class="dialog-container">
+            <p>
+                <strong>Description:</strong>
+                {{ data.description }}
+            </p>
+            <p>
+                <strong>Address:</strong>
+                {{ data.address }}
+            </p>
+            <p>
+                <strong>Timings:</strong>
+                {{ data.timings }}
+            </p>
+            <p>
+                <strong>Speciality:</strong>
+                {{ data.speciality }}
+            </p>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button (click)="closeDialog()">Close</button>
+    </mat-dialog-actions>
+</div>

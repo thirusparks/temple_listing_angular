@@ -12,7 +12,7 @@ export class TempleFiltersComponent {
   @Output() locationSelected = new EventEmitter<string>();
   @Output() locationCleared = new EventEmitter<void>();
 
-  allLocations = ['Chennai', 'Kerala'];
+  allLocations = ['Maharashtra','Chennai', 'Kerala', 'New Delhi', 'Karnataka'];
   allMissions = ['Renovation', 'Healthcare', 'Food Offering', 'Education', 'Water Supply', 'Animal Care'];
   allDeities = ['Krishna', 'Shiva', 'Ganesha', 'Muruga', 'Hanuman', 'Durga'];
   showAllLocations = false;

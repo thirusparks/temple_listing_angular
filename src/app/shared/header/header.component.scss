@@ -2,7 +2,7 @@
   display: flex;
   background: linear-gradient(to right, #F3B33E, #EB693C);
   color: #fff;
-  border-top-left-radius: 4rem;
+  border-top-left-radius: 3rem;
   padding: 1rem;
 }
 
@@ -11,13 +11,13 @@
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
-  padding: 10px 20px;
   border-bottom: 1px solid #eee;
   padding-left: 9rem;
   padding-right: 0rem;
 
   .logo img {
-    height: 32px;
+    width: 128;
+    height: 55px;
   }
 
   .search-container {
@@ -26,13 +26,35 @@
     max-width: 400px;
     margin: 0 15px;
 
-    input {
+    .input-wrapper {
+      position: relative;
       flex: 1;
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-      border-radius: 20px 0 0 20px;
-      font-size: 0.9rem;
-      border-right: 0px !important;
+      display: flex;
+      align-items: center;
+      
+      input {
+        flex: 1;
+        padding: 8px 12px 8px 35px; /* Add padding on the left for the icon */
+        border: 1px solid #ddd;
+        border-radius: 20px 0 0 20px;
+        font-size: 0.9rem;
+        border-right: 0px !important;
+        width: 100%;
+        
+        &::placeholder {
+          font-family: 'Kohinoor Bangla', sans-serif;
+          color: #667085;
+          font-size: 14px;
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        pointer-events: none;
+      }
     }
 
     .mic-btn {
