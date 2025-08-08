@@ -4,6 +4,10 @@ import { ComingSoonComponent } from './shared/pages/coming-soon/coming-soon.comp
 
 export const routes: Routes = [
     { path: '', component: TempleListingPageComponent },
-    { path: 'coming-soon', component: ComingSoonComponent },
-    
+    {
+        path: 'coming-soon',
+        loadComponent: () => import('./shared/pages/coming-soon/coming-soon.component')
+            .then(m => m.ComingSoonComponent)
+    }
+
 ];
